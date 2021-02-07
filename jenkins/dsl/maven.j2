@@ -8,7 +8,7 @@ job('maven_dsl') {
   
     steps {
         maven {
-            mavenInstallation('mvn-jenkins')
+            mavenInstallation('jenkins-maven')
             goals('-B -DskipTests clean package')
         }
         maven {
